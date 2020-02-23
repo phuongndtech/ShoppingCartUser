@@ -1,0 +1,8 @@
+﻿@model List<ShoppingCartWeb.Models.BrandViewModel>
+
+<ul class="nav navbar-nav nav_1">
+    @foreach (var item in Model)
+    {
+        <li><a href="@Url.Content("ProductCategory/Index")">@item.Name</a></li>
+    }
+</ul>

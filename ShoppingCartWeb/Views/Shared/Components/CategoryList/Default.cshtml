@@ -1,0 +1,8 @@
+﻿@model List<ShoppingCartWeb.Models.CategoryViewModel>
+
+<ul class="nav navbar-nav nav_1">
+    @foreach (var item in Model)
+    {
+        <li><a href="@Url.Action("ProductCategoryVC","ProductCategory", new { id = item.Id})">@item.Name</a></li>
+    }
+</ul>
